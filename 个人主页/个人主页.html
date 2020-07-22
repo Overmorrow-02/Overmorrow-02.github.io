@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0px;
+				padding: 0px;
+			}
+			body{
+				background: ghostwhite;
+			}
+			.top{
+				width: 1903px;
+				height: 316px;
+				position: relative;
+				/*background: aqua;*/
+				background-image: url(img/image_header.jpg);
+			}
+			.top_2{
+				width: 1000px;
+				height: 150px;
+				background: white;
+				margin: 50px auto;
+				position: absolute;
+				top: 190px;
+				left: 450px;
+				border-radius: 30px;			
+			}
+			.top_2>.top_n{
+				width: 100px;
+				height: 100px;
+				position: absolute;
+				top: -30px;
+				left: 50px;
+				overflow: hidden;
+				box-shadow: 0px 0px 20px 0px gray;
+				border-radius: 30px;
+				
+			}
+			.top_2>.top_n>img{
+				width: 100%;
+				height: 100%;
+			}
+			.top_2>.top_xm{
+				width: 200px;
+				height: 50px;
+				position: absolute;
+				top: 10px;
+				left: 160px;
+				color: black;
+				font-weight: 700;
+				font-size: 25px;
+				/*background: red;*/
+			}
+			.wenzi{
+				width: 1000px;
+				height: 1500px;
+				margin: 100px auto;
+				background: white;
+			}
+			.wenzi>h1{
+				text-align: center;
+			}
+			.wenzi>.geren{
+				width: 100%;
+				height: 1000px;
+				margin-top: 50px;
+				
+				/*background: antiquewhite;*/
+			}
+		</style>
+	</head>
+	<body>
+		<div class="top"></div>
+		<div class="top_2">
+			<div class="top_n"><img src="img/tpuxiang.jpg"/></div>
+			<div class="top_xm"><p>姓名：刘付立富</p><p>性别：男</p><p>年龄：21</p></div>
+		</div>
+		<div class="wenzi">
+			<h1>项目体验</h1>
+			<div class="geren"><h2>
+					<b>小组成员：嘉成（首页）、海健（自选）、林凯（自选）、王威（自选）</b><br />
+					<b>项目：商联达</b><br />
+					<b>本人负责：客服案列、电商学院</b><br /><br />
+					<b>客服案列制作过程：<br /><br />
+						1.头部和尾部是首页公有的所有到时候拿过来就好了<br /><br />
+						2.上半部有个大背景图，直接单独一个div设置盒子宽100%高为背景图高，再取消平铺。<br /><br />
+						3.轮播图，也就是这个网站唯一的难点（对于我现在的情况来说），因为我轮播图还不是很会，所有自选网站时选了这个简单点的（其实就是针对这个轮播来选的），一边做一边学,现在只做出定时器部分，等有空再回头看。
+					</b><br /><br />
+						4.商品布局，用了bootstrap.css。用了一个div设置了宽高包住了ul里面的所有li，一个li为一个小商品，li里有个:hover是由下往上移动的一个过程,只需要把该隐藏的元素position: absolute;bottom为负值移动到li下面然后让它overflow: hidden;然后再：:hover，bottom：0px；就能回到原位，想慢点就加transition：all 0.5s；就基本ok了。
+					</b><br /><br />
+					5.下半部结尾就div给宽高就给背景就好了。
+			</h2></div>
+		</div>
+	</body>
+</html>
