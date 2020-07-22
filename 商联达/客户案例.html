@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{
+				margin: 0px;
+				padding: 0px;
+			}
+			/*版心内容宽高*/
+			section{
+				width: 1200px;
+				height: 2000px;
+				background: mediumaquamarine;
+				margin: 0px auto;
+			}
+			/*头部*/
+			.header_top_lf{
+				width: 100%;
+				height: 30px;
+				background: aqua;
+				position: fixed;
+				top: 0px;
+				left: 0px;
+				z-index: 10;
+			}
+			/*头部,下部分*/
+			.header_bottom_lf{
+				width: 100%;
+				height: 70px;
+				background: paleturquoise;
+				position: fixed;
+				top: 30px;
+				left: 0px;
+				z-index: 10;
+			}
+			/*中间最上部分*/
+			.section_bGD_lf{
+				width: 100%;
+				height: 440px;
+				background-image: url(img/25_lbp_lf.jpg);
+				background-repeat: no-repeat;
+				background-size: cover;
+				margin-top: 100px;
+			}
+			/*中间内容字体样式*/
+			.box_lf>.section_tZT_lf{
+				width: 800px;
+				height: 190px;
+				background: coral;
+				margin: 0px auto;
+			}
+			.box_lf>.section_tZT_lf>p{
+				font-family: "黑体";
+				font-size: 30px;
+				background: green;
+				display: inline-block;
+				margin:80px 300px 20px 300px;
+			}
+			/*轮播图盒子*/
+			.box_lf{
+				width: 1903px;
+				height: 580px;
+				background: yellow;
+				position: relative;
+			}
+			/*轮播图*/
+			/*.box_lf>.section_lpt_lf{
+				width: 6420px;
+				height: 288px;
+				margin-left: 415px;
+				border: 1px solid #000;
+				position: relative;
+			}
+			.box_lf>.section_lpt_lf>.section_xs_lf{
+				width: 1070px;
+				height: 288px;
+				border: 1px solid #000;
+				float: left;
+			}
+			.box_lf>.section_lpt_lf>.section_xs_lf>.right_1{
+				width: 590px;
+				height: 288px;
+				list-style: none;
+				float: right;
+				padding: 17px 31px 52px 43px;
+				box-sizing: border-box;
+				background: greenyellow;
+			}
+			.box_lf>.section_lpt_lf>.section_xs_lf>.right_1>li{
+			}
+			.box_lf>.section_lpt_lf>.section_xs_lf>.right_1>li:nth-of-type(1){
+				width: 516px;
+				height: 35px;
+				background: magenta;
+			}
+			.box_lf>.section_lpt_lf>.section_xs_lf>.right_1>li:nth-of-type(2){
+				width: 516px;
+				height: 71px;
+				padding: 30px 0px 23px 0px;
+				box-sizing: border-box;
+				background: lightpink;
+			}
+			.box_lf>.section_lpt_lf>.section_xs_lf>.right_1>li:nth-of-type(3){
+				width: 516px;
+				height: 60px;
+				margin-bottom: 20px;
+				font-size: 8px;
+				color: gray;
+			}
+			.box_lf>.section_lpt_lf>.section_xs_lf>.right_1>li:nth-of-type(4){
+				font-size: 8px;
+				color: gray;
+			}
+			.box_lf>.section_lpt_lf>.section_xs_lf>.right_1>li:nth-of-type(4)>p>span>img{
+				margin-left: 20px;
+			}
+
+			.box_lf>.section_lpt_lf>.section_xs_lf>.right_1>.left_2{
+				width: 480px;
+				height: 288px;
+				float: left;
+			}*/
+			/*轮播图*/
+			.box_lf>.lbp_lf{
+				width: 1070px;
+				height: 288px;
+				border: 1px solid #000;
+				position: relative;
+				top: 0px;
+				left: 415px;
+			}
+			.box_lf>.lbp_lf>ul{
+				list-style: none;
+				width: 6450px;
+				height: 288px;
+				background: lightcyan;
+			}
+			.box_lf>.lbp_lf>ul>li{
+				width: 1070px;
+				height: 288px;
+				border: 1px solid #000;
+				float: left;
+			}
+			
+			/*左右按钮*/
+			.box_lf>.section_left_lf{
+				width: 30px;
+				height: 50px;
+				font-size: 40px;
+				background: red;
+				font-family: Simsun;
+				color: #398AEF;
+				position: absolute;
+				top: 54%;
+				left: 20%;
+			}
+			.box_lf>.section_right_lf{
+				width: 30px;
+				height: 50px;
+				font-size: 40px;
+				/*background: red;*/
+				font-family: Simsun;
+				color: #398AEF;
+				position: absolute;
+				top: 54%;
+				right: 20%;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header_top_lf"></div>
+		<div class="header_bottom_lf"></div>
+		<div class="section_bGD_lf"></div>
+		<div class="box_lf">
+				<div class="section_tZT_lf">
+					<p>部分典型案例</p>
+					<h6 style="text-align: center;">10年行业沉淀、30000多家高端客户见证，商联达为您提供最优质的产品和高质量的服务</h6>
+				</div>
+				<!--轮播图-->
+				<!--<div class="section_lpt_lf">
+					<div class="section_xs_lf">
+						<ul class="right_1">
+							<li><img src="img/junlebao.jpg"/><b style="color: gray;">君乐宝</b></li>
+							<li><h5 style="color: gray;">乳制品行业龙头企业</h5></li>
+							<li><p>客户介绍：君乐宝乳业集团成立于1995年，是农业产业化国家重点龙头企业、国家高新技术企业、国家乳品研发技术分中心，公司现有员工10000余人，在河北、河南、江苏、吉林等地建有16个生产工厂，9个现代化大型牧场。业务范围包括婴幼儿奶粉、低温酸奶、常温液态奶、牧业等四大板块，经过多轮筛选最终选用商联达为其搭建官方商城平台。</p></li>
+							<li><p>电商模式：
+								<span><img src="img/PC.png"/>pc端</span>
+								<span><img src="img/WAP.png"/>Wap端</span>
+								<span><img src="img/WECHAT.png"/>微信端</span>
+								<span><img src="img/APP.png"/>APP端</span>
+							</p></li>	
+							<div class="left_2"><img src="img/1.jpg"/></div>
+						</ul>
+					</div>
+				</div>-->
+				<!--轮播图-->
+				<div class="lbp_lf">
+					<ul>
+						<li>
+							
+						</li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+				<!--左右按钮-->
+				<span class="section_left_lf"><</span>
+				<span class="section_right_lf">></span>
+			</div>
+		<section>
+			
+		</section>
+	</body>
+</html>
